@@ -1,0 +1,7 @@
+@theme "/home/tyreece/.config/rofi/themes/gressotest.rasi"
+
+configuration {
+  filebrowser {
+      directories-first: true;
+       }
+}
