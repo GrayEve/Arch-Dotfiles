@@ -1,0 +1,15 @@
+﻿ansiweather
+catppuccin-gtk-theme-mocha
+gpu-screen-recorder
+librewolf-bin
+mullvad-vpn
+qt6ct-kde
+sddm-theme-tokyo-night-git
+spicetify-cli
+stremio
+sunsetr-bin
+vesktop
+vscodium-bin-marketplace
+yay
+zen-browser-bin
+zscroll-git
