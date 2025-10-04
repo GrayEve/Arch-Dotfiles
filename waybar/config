@@ -5,7 +5,7 @@
 
        "modules-left": ["hyprland/workspaces", "wlr/taskbar", "custom/spotify"],
        "modules-center": ["clock"],
-       "modules-right": ["network", "pulseaudio", "memory"],
+       "modules-right": ["custom/power",  "network", "pulseaudio", "memory"],
       
  
    "include": ["/home/tyreece/.config/waybar/modules.json"]
