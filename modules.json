@@ -1,0 +1,105 @@
+{
+  "custom/spotify": {
+		  "format": "  {}",
+		  "interval": 5,
+		  "on-click": "playerctl -p spotify play-pause",
+		  "smooth-scrolling-threshold": 10,
+		  "on-scroll-up": "playerctl -p spotify next",
+		  "on-scroll-down": "playerctl -p spotify previous",
+		  "exec": "~/.config/waybar/scripts/spotify.sh"
+		 },
+		 
+    "custom/power":{
+    "format": "",          
+    "tooltip-format": "Power PC",
+    "on-click": "wlogout"
+    },
+ 
+"clock": {
+        "format":  "<span foreground='#f38ba8'>  </span>{:%a %d %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+       },
+
+"memory": {
+    "interval": 30,
+    "format": "{}% ",
+    "max-length": 10
+},
+"network": {
+    "format-wifi": " ",
+    "format-ethernet": " 󰈀 ",
+    "format-disconnected": " ",
+    "tooltip-format": "Connected to {ipaddr}",
+    "tooltip-format-wifi": "Connected to {essid} Signal Strenght: {signalStrength}%"
+   },
+   "on-click": "hyprctl dispatch exec nm-applet",
+                            
+
+  "pulseaudio": {
+      "format": "{icon}  {volume}%",
+      "format-muted": "",
+      "format-icons": {
+          "default": ["", "", " "]
+      },
+      "on-click": "pavucontrol"
+   },
+"wlr/taskbar": {
+     "format": "{icon}",
+     "icon-size": 14,
+     "icon-theme": "Numix-Circle",
+     "tooltip-format": "{title}",
+     "on-click": "activate",
+     "on-click-middle": "close",
+     "ignore-list": [
+     "Kitty" 
+   ],
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    },
+    "rewrite": {
+        "Firefox Web Browser": "Firefox",
+        "Foot Server": "Terminal"      
+      }
+ }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

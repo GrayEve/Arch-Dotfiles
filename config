@@ -1,0 +1,12 @@
+{
+      "layer": "top",
+      "position": "top",   
+       "height": 35,
+
+       "modules-left": ["hyprland/workspaces", "wlr/taskbar", "custom/spotify"],
+       "modules-center": ["clock"],
+       "modules-right": ["custom/power",  "network", "pulseaudio", "memory"],
+      
+ 
+   "include": ["/home/tyreece/.config/waybar/modules.json"]
+ }
