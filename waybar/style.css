@@ -54,6 +54,7 @@ window#waybar.hidden {
 #cpu,
 #memory,
 #disk,
+#custom-power,
 #temperature,
 #backlight,
 #wireplumber,
@@ -78,6 +79,10 @@ window#waybar.hidden {
     border-color: @base;
     transition: background 0.3s ease-in-out, color 0.3s ease, border-radius 0.3s ease-in-out;
     color: @mauve;
+}
+
+#custom-power { 
+    color: @green;
 }
 
 #custom-spotify:hover {
