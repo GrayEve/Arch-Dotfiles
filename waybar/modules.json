@@ -7,7 +7,14 @@
 		  "on-scroll-up": "playerctl -p spotify next",
 		  "on-scroll-down": "playerctl -p spotify previous",
 		  "exec": "~/.config/waybar/scripts/spotify.sh"
-		},
+		 },
+		 
+    "custom/power":{
+    "format": "",          
+    "tooltip-format": "Power PC",
+    "on-click": "wlogout"
+    },
+ 
 "clock": {
         "format":  "<span foreground='#f38ba8'>  </span>{:%a %d %H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -25,7 +32,7 @@
     "tooltip-format": "Connected to {ipaddr}",
     "tooltip-format-wifi": "Connected to {essid} Signal Strenght: {signalStrength}%"
    },
-   "on-click": "kitty nmtui",
+   "on-click": "hyprctl dispatch exec nm-applet",
                             
 
   "pulseaudio": {
@@ -51,8 +58,8 @@
     },
     "rewrite": {
         "Firefox Web Browser": "Firefox",
-        "Foot Server": "Terminal" 
-    }
+        "Foot Server": "Terminal"      
+      }
  }
    
 
