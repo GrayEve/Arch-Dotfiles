@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Dirctory containing wallpapers 
+WALL_DIR="$HOME/Pictures/Wallpapers/Desktop"
+
+# Current Directory (to cd back to)
+CWD="$(pwd)"
+
+cd "$WALL_DIR" || exit 1 
+
+# Handle spaces in filenames
+IFS=$'\n'
+
+# Grab the user selected wallpaper 
+SELECTED_WALL=$(for a in *.jpg *.png *mp4; do echo -en "$a\0icon\x1f$a\n" ;done| rofi -dmenu -p "")
+
+# If not empty pass to walchange-backend 
+if [ -n "$SELECTED_WALL" ]; then
+   walchange-backend "$SELECTED_WALL"
+fi 
+
+# Go back to the begining
+cd "$CWD" || exit 1
+
+
+# copied from saneAspect
+
