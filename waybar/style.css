@@ -1,4 +1,4 @@
-@import "mocha.css"; 
+@import "colors.css";
 
 * {
     border: none;
@@ -13,7 +13,7 @@
 window#waybar {
     background: transparent;
     background-color: transparent;
-    color: @lavender;
+    color: @error;
     transition-property: background-color;
     transition-duration: 0.1s;
 }
@@ -28,25 +28,25 @@ window#waybar.hidden {
 }
 
 #workspaces button {
-    background: #eb4d4b;
+    background: @primary_container;
     color: darkviolet;
     border-radius: 7px;
 }
 
 #workspaces button.focused {
-    background-color: transparent;
+    background-color: @primary_container;
     color: @rosewater;
     border-top: 2px solid @rosewater;
 }
 
 #workspaces button.active {
-    background-color: transparent;
-    color: @mauve;
-    border-top: 2px solid @mauve;
+    background-color: @transparent;
+    color: @base;
+    border-top: 2px solid @base;
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: @primary_container;
 }
 
 #pulseaudio,
@@ -65,7 +65,7 @@ window#waybar.hidden {
     padding: 5px 20px;
     color: @pink;
     border-radius: 7px;
-    background-color: @base;
+    background-color: @primary_container;
     margin: 0px 6px;
     color: bisque;
 }

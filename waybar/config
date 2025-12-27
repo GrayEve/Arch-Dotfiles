@@ -8,5 +8,5 @@
        "modules-right": ["custom/power",  "network", "pulseaudio", "memory"],
       
  
-   "include": ["/home/tyreece/.config/waybar/modules.json"]
+   "include": ["/home/epicman829/.config/waybar/modules.json"]
  }

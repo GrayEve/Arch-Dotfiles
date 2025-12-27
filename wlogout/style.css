@@ -1,3 +1,5 @@
+@import "colors.css";
+
 window {
   font-family: "JetBrains Mono Nerd Font";
   font-size: 12pt;
@@ -11,7 +13,7 @@ button {
    background-size: 12%; 
    border-style: solid;
    border-width: 2px;
-   background-color: #483d8b;
+   background-color: @primary_container;
    border-color: #daa520;
    margin: 5px;
    border-radius: 12px;
