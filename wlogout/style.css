@@ -16,14 +16,14 @@ button {
    background-color: @primary_container;
    border-color: #daa520;
    margin: 5px;
-   border-radius: 12px;
+   border-radius: 6px;
    transition: all 0.3s ease-in-out;
 }
 
 button:focus, button:active, button:hover {
-	background-color: #993399;
+	background-color: @inverse_primary;
   border-color: #daa520;
-  border-radius: 4px;
+  border-radius: 2px;
 	outline-style: none;
 }
 
