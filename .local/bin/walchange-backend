@@ -16,11 +16,10 @@ notify-send "Changing Theme" "Applying new wallpaper and updating colors, please
 swww img "$IMAGE" --transition-type="center" --transition-step=1 --transition-fps="144"
 
 # Use Matugen to generate Material You colors
-matugen image "$IMAGE"
-
-# Refresh waybar 
-pkill waybar 
-waybar > /dev/null 2>&1 &
+matugen image "$IMAGE" --source-color-index 0
+ 
+ pkill waybar
+ waybar > /dev/null 2>&1 &
 
 # Refresh swaync
 pkill swaync
